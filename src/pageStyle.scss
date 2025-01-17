@@ -1,0 +1,694 @@
+@use "./main.scss";
+
+.product-details {
+    margin: 10dvh auto;
+    .background {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // background-attachment: fixed !important;
+        background-position:center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+
+        height: 300px;
+        h2 {
+            padding: 10px;
+            font-size: 27px;
+            text-align: center;
+            color: main.$white;
+            font-family: caps;
+            line-height: 35px;
+        }
+        div{
+           display: flex;
+           flex-wrap: wrap !important;
+           justify-content: center;
+           align-items: center;
+           gap: 5px;
+
+           
+           a,p{
+            color: main.$white;
+            font-size: 17px;
+            text-align: center;
+           }
+           img{
+                width: 17px;
+           }
+      
+        }
+    }
+
+    .back-btn {
+        margin-top: 2rem;
+        margin-left: 5%;
+        padding: 15px 30px;
+        background-color: main.$primary-color;
+        color: main.$white;
+        font-size: 17px;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .grid {
+        max-width: 90%;
+        margin:auto;
+        .paragraph-map {
+            margin: 2rem 0;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .days {
+            border-top: 2px solid main.$primary-color;
+            padding: 2rem 0;
+            overflow: hidden !important;
+
+
+            .days-item {
+                position: relative;
+                overflow: hidden !important;
+
+                .head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    background-color: main.$primary-color;
+                    cursor: pointer;
+                    position: relative;
+                    z-index: 111;
+
+                    h4 {
+                        font-size: 20px;
+                        color: main.$white;
+                    }
+
+                    .head-icon {
+                        transition: 0.3s;
+
+                        ion-icon {
+                            color: main.$white;
+                            font-size: 27px;
+                        }
+                    }
+
+                    .head-icon.active {
+                        transform: rotate(45deg);
+                        transform-origin: center;
+                    }
+                }
+
+                .days-paragraph {
+                    // border: 1px solid main.$primary-color;
+                    padding: 0.5rem 0 0.5rem 50px;
+                    position: absolute;
+                    font-size: 17px;
+                    line-height: 25px;
+                }
+
+                .days-paragraph.active {
+                    position: relative;
+                }
+            }
+        }
+
+        .in-price,
+        .additon-info,
+        .must-pay {
+            border-top: 2px solid main.$primary-color;
+            padding: 2rem 0;
+
+            h4 {
+                font-size: 20px;
+                font-family: caps;
+                margin-bottom: 1rem;
+            }
+
+            li {
+                list-style: disc;
+                margin-left: 1.3rem;
+                font-size: 17px;
+
+            }
+        }
+    }
+
+}
+// .tours__page{
+//     margin-top: 9.9vh;
+//     .background{
+//         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/hero-img/zanzibar.jpg") no-repeat center;
+//         background-size: cover;
+//         height: 300px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column;
+
+//         h2 {
+//             padding: 10px;
+//             font-size: 35px;
+//             text-align: center;
+//             color: main.$white;
+//             font-family: caps;
+//             line-height: 35px;
+//         }
+//         div{
+//            display: flex;
+//            flex-wrap: wrap !important;
+//            justify-content: center;
+//            align-items: center;
+//            gap: 5px;
+           
+//            a{
+//             color: main.$white;
+//             font-size: 17px;
+//            }
+//            img{
+//                 width: 17px;
+//            }
+      
+//         }
+
+//     }
+//     .tours-content {
+//         display: grid;
+//         gap: 2rem;
+//         max-width: 90%;
+//         margin: 4rem auto;
+//         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+//         .cards {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 1rem;
+
+//             img {
+//                 width: 100%;
+//                 border-radius: 10px;
+//             }
+
+//             h3 {
+
+//                 font-size: 25px;
+//                 font-family: caps;
+//                 font-weight: 500;
+//                 color: main.$black !important;
+//             }
+
+//             p {
+//                 font-size: 17px;
+//                 opacity: 0.9;
+//                 font-weight: 100;
+//             }
+            
+            
+//             .btn {
+                
+//                 button {
+//                     width: 100%;
+//                     padding: 15px;
+//                     border-radius: 30px;
+//                     border: none;
+//                     font-family: normal;
+//                     font-size: 16px;
+//                     color: white;
+//                     background-color: main.$primary-color;
+//                     cursor: pointer;
+//                     color: white;
+//                     font-family: caps;
+//                     font-size: 17px;
+//                 }
+//             }
+
+//         }
+//     }
+// }
+// .contact {
+//     margin-top: 9.9vh;
+
+//     .contact__bg {
+//         height: 300px;
+//         width: 100%;
+//         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/hero-img/zanzibar.jpg") no-repeat center;
+//         background-size: cover;
+//         color: main.$white;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column;
+//         background-attachment: fixed;
+
+//         h2 {
+//             font-family: caps;
+//             font-size: 35px;
+
+//         }
+
+//         div {
+//             margin-top: 1rem;
+//             display: flex;
+//             gap: 4px;
+//             font-size: 17px;
+
+//             img {
+//                 width: 17px;
+//             }
+
+//             a {
+//                 color: main.$white;
+//             }
+//         }
+//     }
+
+//     .contact__main {
+//         max-width: 90%;
+//         margin: 3rem auto;
+
+
+//         h3 {
+//             text-align: center;
+//             color: main.$black;
+//             font-size: 30px;
+//         }
+
+//         .contact__info {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 1rem;
+//             margin-top: 2rem;
+
+//             .contact__item {
+//                 border: 1px solid #3333;
+//                 padding: 10px;
+//                 border-radius: 10px;
+//                 display: flex;
+//                 align-items: center;
+//                 gap: 13px;
+
+//                 .img__bg {
+//                     width: 65px;
+//                     height: 65px;
+//                     background-color: main.$primary-color;
+//                     border-radius: 50%;
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                 }
+
+//                 div:last-child {
+//                     h4 {
+//                         color: main.$primary-color;
+//                         font-size: 19px;
+
+//                     }
+
+//                     p {
+//                         color: main.$black;
+//                         font-size: 17px;
+//                         margin-top: 8px;
+
+//                     }
+
+
+//                 }
+//             }
+//         }
+//     }
+
+//     .form__bg {
+//         // height: 300px;
+//         width: 100%;
+//         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/hero-img/zanzibar.jpg") no-repeat center;
+//         background-size: cover;
+//         background-attachment: fixed;
+
+
+//         .user__info {
+//             max-width: 90%;
+//             margin: auto;
+//             padding: 2rem 0;
+
+//             form {
+//                 width: 100%;
+//                 background-color: main.$white;
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 10px;
+//                 padding: 30px 20px;
+//                 border-radius: 10px;
+
+//                 h3 {
+//                     text-align: center;
+//                     font-size: 20px;
+//                     color: main.$black;
+//                 }
+
+//                 div {
+//                     display: flex;
+//                     flex-direction: column;
+//                     gap: 10px;
+//                     margin-top: 1rem;
+//                 }
+
+//                 input,
+//                 textarea {
+//                     border: 1px solid main.$primary-color;
+//                     border-radius: 10px;
+//                     padding: 10px 15px;
+//                     font-size: 17px;
+//                     outline: none;
+//                 }
+
+//                 textarea {
+//                     height: 100px;
+//                 }
+
+//                 button {
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: center;
+//                     width: fit-content;
+//                     gap: 8px;
+//                     padding: 7px 30px;
+//                     font-size: 17px;
+//                     background-color: main.$primary-color;
+//                     border: 1px solid main.$primary-color;
+//                     border-radius: 10px;
+//                     color: main.$white;
+
+//                 }
+
+//             }
+//         }
+//     }
+
+//     .map {
+
+
+//         margin-bottom: -53px;
+
+//         iframe {
+//             width: 100%;
+//             height: 400px;
+//             border: none;
+//         }
+//     }
+
+// }
+// @media (min-width: 700px) {
+//     .tours__page{
+//         margin-top: 9.9vh;
+//         .background{
+//             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/hero-img/zanzibar.jpg") no-repeat center;
+//             background-size: cover;
+//             height: 300px;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             flex-direction: column;
+    
+//             h2 {
+//                 padding: 10px;
+//                 font-size: 35px;
+//                 text-align: center;
+//                 color: main.$white;
+//                 font-family: caps;
+//                 line-height: 35px;
+//             }
+//             div{
+//                display: flex;
+//                flex-wrap: wrap !important;
+//                justify-content: center;
+//                align-items: center;
+//                gap: 5px;
+               
+//                a{
+//                 color: main.$white;
+//                 font-size: 17px;
+//                }
+//                img{
+//                     width: 17px;
+//                }
+          
+//             }
+    
+//         }
+//         .tours-content {
+//             display: grid;
+//             gap: 2rem;
+//             max-width: 90%;
+//             margin: 4rem auto;
+//             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+//             .cards {
+   
+//                 img {
+//                     height: 250px;
+//                 }   
+                
+//                 h3 {
+//                     white-space: nowrap;
+//                     overflow: hidden;
+//                     text-overflow: ellipsis;
+//                 }
+
+//                 p {
+//                     display: -webkit-box;
+//                     -webkit-box-orient: vertical;
+//                     overflow: hidden;
+//                     text-overflow: ellipsis;
+//                     -webkit-line-clamp: 3;
+//                     /* მხოლოდ სამი ხაზი გამოისახება */
+//                     line-clamp: 3;
+//                 } 
+//             }
+//         }
+//     }
+// }
+// @media (min-width: 1024px) {
+//     .contact {
+
+//         .contact__main {
+//             margin: 5rem auto;
+
+//             h3 {
+//                 font-size: 35px;
+//             }
+
+//             .contact__info {
+//                 display: grid;
+//                 grid-template-columns: repeat(3, 1fr);
+//                 gap: 10px;
+
+//                 .contact__item {
+//                     gap: 10px;
+
+//                     .img__bg {
+//                         width: 55px;
+//                         height: 55px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .form__bg {
+//             .user__info {
+//                 padding: 3.5rem 0 !important;
+
+//                 form {
+//                     width: 500px !important;
+//                     gap: 13px !important;
+//                     padding: 40px 30px !important;
+
+//                     h3 {
+//                         font-size: 25px;
+//                         text-align: left;
+//                     }
+
+//                     div {
+//                         display: grid;
+//                         grid-template-columns: repeat(2, 1fr);
+
+//                         // gap: 13px !important;
+//                     }
+
+//                 }
+//             }
+//         }
+
+//         .map {
+//             iframe {
+//                 height: 500px
+//             }
+//         }
+//     }
+// }
+
+@media (min-width: 1100px){
+    .product-details {
+        margin: 0;
+        // display: flex;
+
+        .background {
+            position: fixed;    
+            height: 100dvh;
+            width: 50%;
+            div{
+               img{
+                    filter: brightness(0) saturate(100%) invert(57%) sepia(44%) saturate(671%) hue-rotate(135deg)brightness(92%) contrast(97%);
+               }    
+            }
+        }
+    
+        .back-btn {
+            margin-left: 0%;
+            cursor: pointer;
+        }
+        .grid {
+            max-width: 45%;
+            margin-left: 52.5%;
+            padding-top: 4.5rem;
+            .paragraph-map {
+                font-size: 17px;
+                line-height: 25px;
+            }
+    
+            .days {
+                .days-item {
+                    position: relative;
+                    overflow: hidden !important;
+    
+                    .head {
+                        h4 {
+                            font-size: 17px;
+                        }
+                    }
+                    .days-paragraph {
+                        font-size: 16px;
+                    }
+                }
+            }
+    
+            .in-price,
+            .additon-info,
+            .must-pay {
+                border-top: 2px solid main.$primary-color;
+                padding: 2rem 0;
+    
+                h4 {
+                    font-size: 20px;
+                    font-family: caps;
+                    margin-bottom: 1rem;
+                }
+    
+                li {
+                    list-style: disc;
+                    margin-left: 1.3rem;
+                    font-size: 17px;
+    
+                }
+            }
+        }
+    
+    }
+}
+@media (min-width: 1200px) {
+    // .product-details {
+    //     .background {
+    //         h2 {
+    //             font-size: 35px;
+    //             text-shadow: 2px 2px main.$primary-color;
+    //         }
+    //     }
+
+    //     .grid {
+    //         margin-top: 0;
+    //         display: grid;
+    //         gap: 2rem;
+    //         grid-template-columns: repeat(2, 1fr);
+
+    //         .in-price,
+    //         .additon-info,
+    //         .must-pay {
+    //             li {
+    //                 line-height: 30px;
+    //             }
+    //         }
+
+    //         .in-price {
+    //             border-top: none;
+
+    //         }
+    //     }
+    // }
+    // .contact {
+
+    //     .contact__main {
+    //         max-width: 1180px;
+
+    //         h3 {
+    //             font-size: 40px;
+    //         }
+
+    //         .contact__info {
+    //             margin-top: 3rem;
+    //         }
+    //     }
+
+    //     .form__bg {
+    //         .user__info {
+    //             max-width: 1180px;
+    //             padding: 5rem 0 !important;
+
+    //             form {
+    //                 width: 600px !important;
+    //                 gap: 20px !important;
+    //                 padding: 40px 30px !important;
+
+    //                 h3 {
+    //                     font-size: 30px;
+    //                 }
+
+    //                 div {
+    //                     gap: 20px !important;
+    //                 }
+
+    //                 input,
+    //                 textarea {
+    //                     border: 1px solid main.$primary-color;
+    //                     border-radius: 10px;
+    //                     padding: 20px 25px;
+    //                     font-size: 17px;
+    //                     outline: none;
+    //                 }
+
+    //                 textarea {
+    //                     height: 150px;
+    //                 }
+
+    //                 button {
+    //                     display: flex;
+    //                     align-items: center;
+    //                     justify-content: center;
+    //                     width: fit-content;
+    //                     gap: 8px;
+    //                     padding: 15px 40px;
+    //                     font-size: 17px;
+    //                     background-color: main.$primary-color;
+    //                     border: 1px solid main.$primary-color;
+    //                     border-radius: 10px;
+    //                     color: main.$white;
+    //                     margin-top: 15px;
+    //                 }
+
+    //             }
+    //         }
+    //     }
+
+    // }
+}
