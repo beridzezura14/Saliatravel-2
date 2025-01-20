@@ -1,4 +1,4 @@
-import RightSide from "./components/rightSide"
+import RightSide from "./components/RightSide"
 import Hero from "./components/home/Hero"
 
 function HomePage() {
