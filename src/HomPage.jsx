@@ -1,7 +1,7 @@
 import RightSide from "./components/rightSide"
 import Hero from "./components/home/Hero"
 
-function Home() {
+function HomePage() {
     return (
         <div className="sides" >
             <Hero />
@@ -10,4 +10,4 @@ function Home() {
     )
 }
 
-export default Home
+export default HomePage
